@@ -103,7 +103,7 @@ class Reports extends React.Component {
                     Amount
                   </th>
                 </tr>
-                {product.data.map((item, i) => (
+                {product.data && product.data.map((item, i) => (
                   <tr>
                     <th>{item.billId}</th>
                     <th>{Number(item.amount).toFixed(2)}</th>
