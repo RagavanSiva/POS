@@ -1,0 +1,271 @@
+.home {
+  flex: 4;
+}
+
+.homeWidgets {
+  display: flex;
+}
+.main-section {
+  display: flex;
+  /* flex-direction: column; */
+}
+.panel1 {
+  /* width: 57rem; */
+  /* border-right: 1px solid grey; */
+  width: calc(100vw - 26rem);
+position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.panel2 {
+  width: 26rem;
+  box-shadow: 0 0 6px 3px #a98f0d;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.products {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 33rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow: auto;
+}
+.card {
+  width: 15.5rem;
+  height: 15rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  margin: 0 0.3rem;
+  margin-bottom: 2rem;
+}
+.img-container {
+  width: 100%;
+  height: 17rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  object-fit: center;
+  box-shadow: 0 0 10px -8px;
+
+}
+.card .price {
+  position: absolute;
+  top: -9px;
+  left: -12px;
+  background: white;
+  color: green;
+  font-size: 22px;
+  z-index: 100;
+  border-radius: 50%;
+  padding: 13px;
+}
+.card .title {
+  text-align: center;
+  padding: 12px 5px;
+  font-size: 20px;
+}
+
+.panel2 .upload-container {
+  margin-top: 1rem;
+
+  overflow: hidden;
+  /* overflow-y: scroll; */
+  height: calc(100vh - 0.5rem);
+}
+
+.flex {
+  display: flex;
+}
+
+.MuiTabs-flexContainer button {
+  background: #e5c446;
+  margin: 0 1rem;
+  border-radius: 30px;
+  min-height: 2rem;
+  padding: 10px 15px;
+  font-weight: 800;
+}
+
+.tab-cat .MuiTabs-flexContainer .Mui-selected {
+  color: white;
+  font-weight: bold;
+}
+.tab-cat .MuiTabs-indicator {
+  display: none;
+}
+.tab-cat {
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.tab-cat .MuiTabPanel-root {
+  padding: 24px 0;
+}
+
+.tab-cat .MuiTabs-flexContainer {
+  margin-left: 1rem;
+}
+
+.upload-container .img-section {
+  position: relative;
+}
+.upload-container .img-section {
+  position: relative;
+  width: 100%;
+  height: 17rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.upload-container .overlay {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: inherit;
+  display: none;
+
+  background: black;
+  opacity: 0.4;
+}
+.upload-container .img-section:hover .overlay {
+  display: flex;
+}
+.upload-container .img-section:hover .button-sec {
+  display: flex;
+}
+.upload-container .button-sec {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  z-index: 101;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+}
+.upload-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.upload-container .name {
+  margin-top: 1rem;
+}
+.upload-container img {
+  object-fit: cover;
+  object-position: center;
+  width: inherit;
+  height: inherit;
+}
+.upload-container .name input,.upload-container .name select {
+  width: 100%;
+  height: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0px grey;
+  border: 0;
+}
+button.upload,
+button.remove {
+  border-radius: 5px;
+  height: 2rem;
+  width: 4rem;
+  border: 0;
+  background: white;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.upload-container .MuiTabs-flexContainer button {
+  background: white;
+}
+.price-add-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 22px -12px gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+.price-add-card input {
+  width: 7rem;
+}
+.tab-price .MuiTabPanel-root {
+  padding: 12px;
+}
+.tab-price .price-list{
+  height: 24rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 3rem;
+
+}
+.tab-price .price span {
+margin-right: 1rem;
+}
+.tab-price .price-slot{
+
+ border: 1px solid lightgray;
+ border-radius: 15px;
+ /* display: flex;
+ justify-content: space-between; */
+ padding: 10px;
+ margin: 0.3rem 0;
+}
+/* .tab-price .price-slot td{
+ width: 50%;
+
+} */
+.tab-price table {
+ width: 100%;
+
+
+}
+.tab-price table th{
+text-align: start;
+
+}
+.tab-price table tr{
+
+    border: 1px solid grey;
+}
+button.save{
+  width: 6rem;
+  border-radius: 5px;
+  background: #be9708;
+  border: none;
+  margin-top: 2rem;
+  padding: 10px 0;
+  color: white;
+  float: right;
+}
+button.new{
+  padding: 7px 0;
+  color: white;
+  border-radius: 5px;
+  margin-left: auto;
+  background: #be9708;
+  border: 0;
+  width: 6rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.icon-add svg{
+  color: #be9708 ;
+}
+.tab-price .Mui-selected {
+  color: #be9708 !important;
+}
+.MuiTabs-indicator{
+  background-color: #be9708 !important;
+}
+.d-none{
+  display: none;
+}
